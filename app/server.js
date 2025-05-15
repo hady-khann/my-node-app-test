@@ -31,10 +31,8 @@ const databaseName = process.env.MONGO_DB;
 if (!mongoUsername || !mongoPassword || !mongoHost || !databaseName) {
   throw new Error("MongoDB connection environment variables are not set");
 } 
-else{
-  const mongoUrl = `mongodb://${mongoUsername}:${mongoPassword}@${mongoHost}`;
-}
 
+const mongoUrl = `mongodb://${mongoUsername}:${mongoPassword}@${mongoHost}`;
 
 // use when starting application locally with node command
 // let mongoUrlLocal = "mongodb://admin:password@localhost:27017";
