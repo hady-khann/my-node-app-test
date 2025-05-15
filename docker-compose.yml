@@ -1,10 +1,11 @@
 version: '3'
 services:
   my-app:
-    image: my-node-app:1.0
+    image: node-app:1.0
+    container_name: node-app
     ports:
      - 3000:3000
-    nvironment:
+    environment:
       - MONGO_USERNAME=${MONGO_USERNAME}
       - MONGO_PASSWORD=${MONGO_PASSWORD}
       - MONGO_HOST=${MONGO_HOST}
