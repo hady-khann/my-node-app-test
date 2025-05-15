@@ -1,8 +1,8 @@
 version: '3'
 services:
-  node_app:
-    image: node_app:1.0
-    container_name: node_app
+  node-app:
+    image: node-app:1.0
+    container_name: node-app
     ports:
      - 3000:3000
     environment:
